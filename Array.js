@@ -17,7 +17,7 @@ console.log(Fruits)
 
 //(3)-->push-->add elemnt at the end of the array
 Fruits.push("Grapes", "Orange")
-console.log(Fruits)
+console.log(Fruits)  
 
 //(4)-->unshift-->add elemnt at the starting of the array
 Fruits.unshift("Cherry")
@@ -41,4 +41,32 @@ console.log(join)
 console.log(typeof(join)) // ans=string
 console.log(typeof(Fruits)) // ans=object
 
+//(9)-->slice(startIndex, lastIndex)--> used to extract element from the middle
+
+let Slice=Fruits.slice(1,3)
+console.log(Slice)  
+
+//(10)-->splice(kaha se add krna hai, delete count(kitne element delete krna hai), kya add krna h)--> add element in the middle and also used for delete element
+
+console.log(Fruits)
+Fruits.splice(2,1,"watermelon") // watermelon k bd k elements ko delete krta h
+console.log(Fruits)
+
+//(11)-->concat()--->used to join two arrays.
+let arr1=[1,2]
+let arr2=["vaishali","khushi"]
+let arr3=[19,20]
+let new_arr= arr1.concat(arr2,arr3)
+// let final_arr=new_arr.concat(arr3)
+console.log(new_arr)
+
+//(12)-->reverse()-->reverse the array
+let array = [1,2,3,4]
+console.log(array.reverse())
+
+//Q--> reverse a number = 75638
+let num = 756238
+let reverse_num = num.toString().split('').reverse().join('')
+console.log(reverse_num)  // ans = string "83657"
+console.log(Number(reverse_num)) // ans = 83657  in form of number
 
