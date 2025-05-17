@@ -15,8 +15,8 @@ Sum()
 function MaxNum(){
     let arr2=[3,7,2,9,5]
     let max=arr2[0]
-    for(let i = 0; i<5; i++){
-        if(max<arr2[i]){
+    for(let i = 1; i<5; i++){   // 1 se start krenge kyunki 0 se already compare kr chuke hai
+        if(arr2[i]>max){
             max=arr2[i]
         }
     }
@@ -41,8 +41,8 @@ function CountEvenOdd(){
             oddcount++
         }
     }
-    console.log("Even count = "+" "+evencount)
-    console.log("Odd count = "+" "+oddcount)
+    console.log("Even count = "+" ",evencount)
+    console.log("Odd count = "+" ",oddcount)
 
 }
 CountEvenOdd()
@@ -69,13 +69,12 @@ function merge(){
     let arr5=[1,2,3] 
     let arr6=[4,5,6]
     let merged=[]
-    for(let i=0; i<arr5.length; i++){
+    for(let i=0; i<arr5.length; i++){ 
         merged[merged.length]=arr5[i]
+        merged[merged.length]=arr6[i]
+
     }
-    for(let j=0; j<arr6.length; j++){
-        merged[merged.length]=arr6[j]
-    }
-    console.log("merged array:"+" "+merged)
+    console.log("merged array:"+" ",merged)
 }
 merge()
 
@@ -91,6 +90,6 @@ function ReverseArray(){
         start++
         end--
     }
-    console.log("Reversed Array"+" "+arr7)
+    console.log("Reversed Array",arr7)
 }
-ReverseArray
+ReverseArray()
